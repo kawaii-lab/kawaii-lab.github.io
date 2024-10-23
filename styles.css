@@ -1,0 +1,156 @@
+/* Base styling */
+body {
+    font-family: "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    color: #222;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    font-size: 1.08rem;
+}
+
+body li {
+  margin-block: 0.5rem;
+}
+
+body a {
+    color: #55a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body a:hover {
+    color: #77e;
+}
+
+/* Header and Footer styling */
+header, footer {
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f8;
+}
+
+main {
+    max-width: 800px;
+    padding: 0rem 1.6rem 1rem;
+    margin: auto;
+}
+
+main p {
+    line-height: 1.5;
+    margin-block: 0.8rem;
+}
+
+main h1 {
+    margin-block: 1.4rem 1.5rem;    
+    font-size: 2.2rem;
+}
+
+main h1, h2, strong {
+    color: #336;    
+}
+
+main h2 {
+    margin-block: 1.5rem 0.4rem;    
+    font-size: 1.5rem;
+}
+
+main h3, h4, h5, h6 {
+    margin-block: 0.6rem 0.2rem;
+    font-size: 1.3rem;
+}
+
+/* Logo styling */
+.logo {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo img, source {
+    vertical-align: middle;
+    image-rendering: pixelated;
+}
+
+/* Navigation menu styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: inherit;
+    padding-block: 2pt;
+}
+
+nav a {
+    color: #88a;    
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    flex: 1;
+    min-width: 128px;
+    padding: 6px 0;
+    margin: auto;
+}
+
+nav a:hover {
+    color: #66c;
+    transition: color 0.2s ease;
+}
+
+
+@media (min-width: 512px) {
+    nav {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 511px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    nav a {
+        width: 50%;
+    }
+}
+
+/* Footer styling */
+footer {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.6rem;
+}
+footer p {
+    line-height: 1.2;
+    margin-block: 0.2rem;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #ccc;
+        background-color: #111;
+    }
+
+    body a {
+        color: #aae;
+    }
+
+    body a:hover {
+        color: #88f;
+    }
+
+    header, footer {
+        background-color: #223;
+    }
+/*    .logo {
+        background-color: #111;
+    }
+*/
+    main h1, h2, strong {
+        color: #dde;    
+    }
+
+}
